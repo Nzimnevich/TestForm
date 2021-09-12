@@ -66,7 +66,7 @@ public class TestsForm {
         $x("//td[text()='Picture']").parent().shouldBe(text("Picture cat.jpg"));
         $x("//td[text()='Address']").parent().shouldBe(text(currentAddress));
         $x("//td[text()='State and City']").parent().shouldBe(text(state + " " + city));
-        
+
         $("#closeLargeModal").click();
         $("#example-modal-sizes-title-lg").shouldBe(disappear);
 
